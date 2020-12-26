@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Bitmap imageBitmap;
     String expression;
     Button takeimage;
+    static int size_of_faces;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         Frame frame = new Frame.Builder().setBitmap(imageBitmap).build();
         SparseArray<Face> faces = faceDetector.detect(frame);
-
+         size_of_faces = faces.size();
         for (int i = 0; i < faces.size(); i++) {
             Face thisFace = faces.valueAt(i);
             imageBitmap = drawRectOnBitmap(this,thisFace,imageBitmap);
