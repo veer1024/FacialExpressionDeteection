@@ -1,0 +1,3 @@
+# FacialExpressionDeteection
+this App detects facial expression,face orientation,left or right profile, smiling or not ...
+
