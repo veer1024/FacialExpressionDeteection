@@ -44,12 +44,12 @@ public class ImageHelper {
             expression = "not smily!";
         }
 
-        drawTextOnBitmap(canvas,10,X/2,Y+10,Color.GREEN,expression);
+        drawTextOnBitmap(canvas,6,X/2,Y+10,Color.GREEN,expression);
        // printing circles on landmarks ,like eye,nose,mouth etc..
         for (Landmark landmark : thisface.getLandmarks()) {
             int cx = (int) (landmark.getPosition().x);
             int cy = (int) (landmark.getPosition().y);
-            canvas.drawCircle(cx, cy, 1, paint);
+            canvas.drawCircle(cx, cy, (float) 0.3, paint);
         }
 
         return bitmap;
