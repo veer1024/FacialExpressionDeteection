@@ -68,14 +68,14 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
              imageBitmap = (Bitmap) extras.get("data");
-             imageview.setImageBitmap(imageBitmap);
+         //    imageview.setImageBitmap(imageBitmap);
             processing();
         }
     }
 
     private void processing() {
-        Bitmap tempBitmap = Bitmap.createBitmap(imageBitmap.getWidth(), imageBitmap.getHeight(),
-                Bitmap.Config.ARGB_8888);
+        // imageBitmap = Bitmap.createBitmap(imageBitmap.getWidth(), imageBitmap.getHeight(),
+         //       Bitmap.Config.ARGB_8888);
 
         FaceDetector faceDetector = new
                 FaceDetector.Builder(getApplicationContext()).setTrackingEnabled(false).setLandmarkType(FaceDetector.ALL_LANDMARKS)
