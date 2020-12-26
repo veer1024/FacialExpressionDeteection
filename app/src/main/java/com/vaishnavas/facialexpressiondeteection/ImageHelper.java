@@ -5,14 +5,9 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.SparseArray;
-import android.webkit.WebSettings;
-import android.widget.Toast;
-
 import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.Landmark;
 
-//import com.microsoft.projectoxford.emotion.con.FaceRectangle;
 
 public class ImageHelper {
     public static Bitmap drawRectOnBitmap(Context context, Face thisface, Bitmap mbitmap){

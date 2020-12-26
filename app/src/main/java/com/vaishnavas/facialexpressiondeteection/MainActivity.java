@@ -6,29 +6,21 @@ import androidx.core.app.ActivityCompat;
 
 
 import android.Manifest;
-import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.RectF;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
-
 import static com.vaishnavas.facialexpressiondeteection.ImageHelper.drawRectOnBitmap;
 
 
